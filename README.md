@@ -6,6 +6,8 @@ Each tool has its own package directory (e.g. `zsh/`, `starship/`, `tmux/`) that
 
 ## Prerequisites
 
+Install GNU Stow:
+
 ```sh
 brew install stow      # macOS
 sudo apt install stow  # Debian/Ubuntu
@@ -14,12 +16,18 @@ sudo pacman -S stow    # Arch
 
 ## Usage
 
-```sh
-git clone <repo-url>
-cd dotfiles
+Copy the dotfiles repo to your local `$HOME` directory using git:
 
-stow zsh          # install a single package
+```sh
+git clone <repo-url> ~/dotfiles
+cd ~/dotfiles
+```
+
+Use GNU Stow to create the symlinks:
+
+```sh
 stow */           # install everything
+stow zsh          # install a single package
 stow -D zsh       # remove a package
 ```
 
