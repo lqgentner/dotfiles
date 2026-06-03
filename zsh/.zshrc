@@ -61,7 +61,7 @@ fi
 # ---------------------------------------------------------------------------
 # zoxide
 # ---------------------------------------------------------------------------
-if command -v zoxide &>/dev/null; then
+if command -v zoxide &>/dev/null && [[ $- == *i* ]]; then
   eval "$(zoxide init --cmd cd zsh)"
 fi
 
