@@ -20,6 +20,7 @@ $line_break\
 $character"""
 
 palette = 'catppuccin_mocha'
+command_timeout = 3600
 
 [os]
 disabled = false
