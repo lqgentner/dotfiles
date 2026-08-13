@@ -11,12 +11,11 @@ $git_branch\
 $git_status\
 [](fg:lavender bg:yellow)\
 $python\
-[](yellow)\
-$fill\
-$cmd_duration\
-$status\
+[](fg:yellow bg:white)\
 $time\
 [](white)\
+$cmd_duration\
+$status\
 $line_break\
 $character"""
 
@@ -98,7 +97,7 @@ not_executable_symbol = "✘"
 not_found_symbol = "󰍉"
 sigint_symbol = "󰂭"
 signal_symbol = "󱐌"
-format = '[]($style)[$symbol ](bg:$style fg:crust)[](bg:$style fg:white)'
+format = '[ $symbol]($style)'
 success_style = 'green'
 failure_style = 'red'
 
@@ -106,15 +105,13 @@ failure_style = 'red'
 disabled = false
 time_format = "%R"
 style = "bg:white"
-format = '[[ $time](fg:crust bg:white)]($style)'
+format = '[[  $time](fg:crust bg:white)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-# success_symbol = '[❯](bold fg:green)'
-# error_symbol = '[❯](bold fg:red)'
 success_symbol = '[❯](bold fg:text)'
 error_symbol = '[❯](bold fg:text)'
 vimcmd_symbol = '[❮](bold fg:green)'
@@ -124,7 +121,7 @@ vimcmd_visual_symbol = '[❮](bold fg:yellow)'
 
 [cmd_duration]
 show_milliseconds = false
-format = "  in $duration "
+format = "  in $duration"
 style = "bg:lavender"
 disabled = false
 show_notifications = true
