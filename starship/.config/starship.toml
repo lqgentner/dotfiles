@@ -92,8 +92,8 @@ format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
 [status]
 disabled = false
 map_symbol = true
-symbol = "✔"
-success_symbol = "✔"
+symbol = "✘"
+success_symbol = ""
 not_executable_symbol = "✘"
 not_found_symbol = "󰍉"
 sigint_symbol = "󰂭"
