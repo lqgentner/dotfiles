@@ -1,0 +1,4 @@
+^/README.*
+^/COPYING
+^/LICENSE.*
+^/\.stow-local-ignore$

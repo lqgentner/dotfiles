@@ -1,0 +1,68 @@
+[user]
+	name = Luis Q. Gentner
+	email = luis.gentner@outlook.com
+
+[init]
+	defaultBranch = main
+
+[column]
+	ui = auto
+
+[branch]
+	sort = -committerdate
+	autoSetupMerge = simple
+
+[tag]
+	sort = version:refname
+
+[push]
+	followTags = true
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[fetch]
+	prune = true
+	prunetags = true
+
+[rebase]
+	autoStash = true
+	updateRefs = true
+
+[rerere]
+	enabled = true
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+	tool = nvimdiff
+
+[merge]
+	conflictstyle = zdiff3
+	tool = nvimdiff
+
+[help]
+	autocorrect = prompt
+
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore
+
+[alias]
+	st = status -sb
+	co = checkout
+	br = branch
+	lg = log --graph --oneline --decorate
+	last = log -1 HEAD
+
+[credential "https://github.com"]
+	helper =
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !gh auth git-credential
+
+# Machine-specific or sensitive overrides (untracked, not part of this repo)
+[include]
+	path = ~/.gitconfig.local
