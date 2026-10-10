@@ -80,3 +80,10 @@ if command -v nvim &>/dev/null; then
   export EDITOR=nvim
   export VISUAL=nvim
 fi
+
+# ---------------------------------------------------------------------------
+# Pixi package manager
+# ---------------------------------------------------------------------------
+if [[ -d "$HOME/.pixi/bin" ]]; then
+  export PATH="$HOME/.pixi/bin:$PATH"
+fi
