@@ -6,17 +6,45 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "codex@openai-codex": true
+    "codex@openai-codex": true,
+    "portolan@portolan-skills": false,
+    "superpowers@claude-plugins-official": true,
+    "avoid-ai-writing@conorbronsdon-skills": true
   },
   "extraKnownMarketplaces": {
     "openai-codex": {
       "source": {
         "source": "github",
         "repo": "openai/codex-plugin-cc"
+      },
+      "autoUpdate": true
+    },
+    "portolan-skills": {
+      "source": {
+        "source": "github",
+        "repo": "portolan-sdi/portolan-skills"
+      },
+      "autoUpdate": true
+    },
+    "conorbronsdon-skills": {
+      "source": {
+        "source": "github",
+        "repo": "conorbronsdon/avoid-ai-writing"
       }
     }
   },
   "effortLevel": "high",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "medium"
+    },
+    "claude-fable-5-1": {
+      "effortLevel": "medium"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
   "tui": "fullscreen",
   "theme": "auto"
 }
